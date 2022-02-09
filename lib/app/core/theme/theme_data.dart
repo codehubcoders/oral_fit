@@ -14,4 +14,8 @@ final greySubDarkColor = Color(0xFF777777);
 
 final primaryFontColor = Color(0xFF222222);
 
+final whiteColor = Colors.white;
+
 final primaryFont = "Noto_Serif_KR";
+
+final String logoImage = 'assets/images/oral_fit_logo.png';

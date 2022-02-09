@@ -8,9 +8,11 @@ environment:
 dependencies: 
   cupertino_icons: ^1.0.2
   get: 4.6.1
-  splash_screen_view: ^3.0.0
+  
   flutter: 
     sdk: flutter
+  splash_screen_view: ^3.0.0
+  flutter_svg: ^1.0.3
 
 dev_dependencies: 
   flutter_lints: ^1.0.0

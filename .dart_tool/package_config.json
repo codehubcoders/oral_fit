@@ -74,6 +74,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_svg",
+      "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_svg-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -118,6 +124,18 @@
     {
       "name": "path",
       "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_drawing",
+      "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/path_drawing-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_parsing",
+      "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/path_parsing-1.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -212,7 +230,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-02-09T07:19:34.999387Z",
+  "generated": "2022-02-09T07:40:07.974994Z",
   "generator": "pub",
   "generatorVersion": "2.16.0"
 }
