@@ -23,7 +23,7 @@ flutter:
   assets:
     - assets/images/
 
-fonts:
+  fonts:
     - family: Noto_Serif_KR
       fonts:
         - asset: assets/fonts/NotoSansKR-Regular.otf
