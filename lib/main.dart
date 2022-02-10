@@ -11,7 +11,8 @@ void main() {
       title: "ORAL FIT",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
-      theme: ThemeData(fontFamily: primaryFont, primaryColor: primaryFontColor),
+      theme:
+          ThemeData(fontFamily: primaryFont, primaryColor: primaryFontColor2),
     ),
   );
 }
