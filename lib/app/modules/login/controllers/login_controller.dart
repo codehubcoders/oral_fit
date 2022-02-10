@@ -31,7 +31,7 @@ class LoginController extends GetxController {
   void login() async {
     if (loginKey.currentState!.validate()) {
       Get.snackbar('로그인', '로그인 되었습니다.', backgroundColor: whiteColor);
-      Get.offAllNamed('/home');
+      Get.offAllNamed('/navigationbar');
       final box = GetStorage();
       final userId = loginIdCtl.text.trim();
       final userPass = loginPassCtl.text.trim();

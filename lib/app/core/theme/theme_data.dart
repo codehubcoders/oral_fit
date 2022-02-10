@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 final primaryColor = Color(0xFF249EE3);
+
 final selectFontColor = Color(0xFF0B82C6);
 final primaryLiteColor = Color(0xFFEDF8FF);
 final primaryDarkColor = Color(0xFF003757);
