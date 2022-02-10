@@ -13,6 +13,7 @@ class LoginView extends GetView<LoginController> {
   Widget build(BuildContext context) {
     Get.lazyPut<LoginController>(() => LoginController());
     final _ = Get.find<LoginController>();
+
     return Scaffold(
         resizeToAvoidBottomInset: true,
         body: Form(
@@ -98,9 +99,7 @@ class LoginView extends GetView<LoginController> {
                   width: Get.width * 0.85,
                   margin: EdgeInsets.only(bottom: 30),
                   child: CustomButton(
-                    onTap: () {
-                      _.login();
-                    },
+                    onTap: _.login,
                     buttonColor: primaryColor,
                     fontsize: 16,
                     textColor: whiteColor,
