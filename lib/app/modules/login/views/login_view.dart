@@ -99,6 +99,7 @@ class LoginView extends GetView<LoginController> {
                   width: Get.width * 0.85,
                   margin: EdgeInsets.only(bottom: 30),
                   child: CustomButton(
+                    borderSide: BorderSide.none,
                     onTap: _.login,
                     buttonColor: primaryColor,
                     fontsize: 16,

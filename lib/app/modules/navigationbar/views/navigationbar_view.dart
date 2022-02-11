@@ -1,16 +1,95 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// import 'package:flutter_svg/svg.dart';
+// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:get/get.dart';
-import 'package:oral_fit/app/core/theme/theme_data.dart';
-import 'package:oral_fit/app/modules/alarm/views/alarm_view.dart';
-import 'package:oral_fit/app/modules/chat/views/chat_view.dart';
-import 'package:oral_fit/app/modules/home/views/home_view.dart';
-import 'package:oral_fit/app/modules/order_list/views/order_list_view.dart';
+// import 'package:oral_fit/app/core/theme/theme_data.dart';
+// import 'package:oral_fit/app/modules/alarm/views/alarm_view.dart';
+// import 'package:oral_fit/app/modules/chat/views/chat_view.dart';
+// import 'package:oral_fit/app/modules/home/views/home_view.dart';
+// import 'package:oral_fit/app/modules/order_list/views/order_list_view.dart';
 
+import '../../../core/theme/theme_data.dart';
+import '../../alarm/views/alarm_view.dart';
+import '../../chat/views/chat_view.dart';
+import '../../home/views/home_view.dart';
+import '../../order_list/views/order_list_view.dart';
 import '../controllers/navigationbar_controller.dart';
+import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 
+// class NavigationbarView extends GetView<NavigationbarController> {
+//   final String orderListIcon = 'assets/images/orderList.svg';
+//   final String paperPlusGreyIcon = 'assets/images/paper_Plus_gery.svg';
+//   @override
+//   Widget build(BuildContext context) {
+//     Get.lazyPut<NavigationbarController>(() => NavigationbarController());
+//     return GetBuilder<NavigationbarController>(builder: (controller) {
+//       return PersistentTabView(
+//         context,
+//         screens: screens(),
+//         items: items(),
+//         onItemSelected: (index) {},
+//         // backgroundColor: Colors.white,
+//         navBarHeight: 62,
+//         navBarStyle: NavBarStyle.style10,
+//       );
+//     });
+//   }
+// }
+
+// List<Widget> screens() {
+//   return [
+//     Scaffold(
+//       body: HomeView(),
+//     ),
+//     OrderListView(),
+//     ChatView(),
+//     AlarmView(),
+//   ];
+// }
+
+// List<PersistentBottomNavBarItem> items() {
+//   return [
+//     btnItem(
+//       title: '의뢰서작성',
+//       icon: Icons.home_filled,
+//       activeColor: Colors.deepPurple,
+//     ),
+//     btnItem(
+//         title: '주문목록',
+//         icon: Icons.add_box_rounded,
+//         activeColor: Colors.deepOrange),
+//     btnItem(
+//       title: '채팅',
+//       icon: Icons.settings,
+//       activeColor: Colors.amber,
+//     ),
+//     btnItem(
+//       title: '알림',
+//       icon: Icons.settings,
+//       activeColor: Colors.amber,
+//     ),
+//   ];
+// }
+
+// PersistentBottomNavBarItem btnItem({
+//   required String title,
+//   required IconData icon,
+//   required Color activeColor,
+// }) {
+//   return PersistentBottomNavBarItem(
+//     title: title,
+//     icon: Icon(icon),
+//     textStyle: const TextStyle(fontWeight: FontWeight.bold),
+//     activeColorPrimary: activeColor,
+//     inactiveColorPrimary: const Color.fromRGBO(195, 195, 195, 1),
+//     activeColorSecondary: Colors.white,
+//   );
+// }
+//   //
+//
 class NavigationbarView extends GetView<NavigationbarController> {
   final String orderListIcon = 'assets/images/orderList.svg';
   final String paperPlusGreyIcon = 'assets/images/paper_Plus_gery.svg';
@@ -57,12 +136,12 @@ class NavigationbarView extends GetView<NavigationbarController> {
                   activeIcon: Image.asset('assets/images/orderList.png'),
                   label: '주문목록',
                 ),
-                _bottomNavigationBarItem(
-                  icon: FontAwesomeIcons.solidCommentDots,
+                BottomNavigationBarItem(
+                  icon: Icon(FontAwesomeIcons.solidCommentDots),
                   label: '채팅',
                 ),
-                _bottomNavigationBarItem(
-                  icon: FontAwesomeIcons.solidBell,
+                BottomNavigationBarItem(
+                  icon: Icon(FontAwesomeIcons.solidBell),
                   label: '알림',
                 ),
               ],
@@ -70,13 +149,6 @@ class NavigationbarView extends GetView<NavigationbarController> {
           ),
         );
       },
-    );
-  }
-
-  _bottomNavigationBarItem({IconData? icon, String? label}) {
-    return BottomNavigationBarItem(
-      icon: FaIcon(icon),
-      label: label,
     );
   }
 }

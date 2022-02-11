@@ -5,6 +5,7 @@ import 'package:oral_fit/app/core/theme/theme_data.dart';
 import '../controllers/home_controller.dart';
 
 class Step06Dropdown extends GetView {
+  final isTouching = false.obs;
   final _ = Get.find<HomeController>();
   @override
   Widget build(BuildContext context) {

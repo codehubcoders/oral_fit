@@ -6,6 +6,7 @@ import 'package:oral_fit/app/core/theme/theme_data.dart';
 import '../controllers/home_controller.dart';
 
 class Selecte05 extends GetView {
+  final isTouching = false.obs;
   final _ = Get.find<HomeController>();
 
   Widget customRadioButton(String text, int index) {

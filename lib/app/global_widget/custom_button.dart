@@ -9,9 +9,11 @@ class CustomButton extends GetView {
   final double fontsize;
   final Size size;
   final FontWeight fontWeight;
+  final BorderSide borderSide;
 
   const CustomButton({
     Key? key,
+    required this.borderSide,
     required this.fontWeight,
     required this.buttonColor,
     required this.size,
@@ -32,6 +34,7 @@ class CustomButton extends GetView {
       style: ElevatedButton.styleFrom(
           fixedSize: size,
           primary: buttonColor,
+          side: borderSide,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
           elevation: 0.0),

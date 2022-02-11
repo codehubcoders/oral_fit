@@ -14,11 +14,12 @@ import '../../../global_widget/custom_button.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
-  final _ = Get.find<HomeController>();
   @override
   Widget build(BuildContext context) {
-    Get.lazyPut<HomeController>(() => HomeController());
+    Get.put(HomeController());
+    final _ = Get.find<HomeController>();
     return Scaffold(
+      backgroundColor: whiteColor,
       appBar: AppBar(
         elevation: 0,
         toolbarHeight: 62,
@@ -131,6 +132,7 @@ class HomeView extends GetView<HomeController> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomButton(
+                    borderSide: BorderSide.none,
                     buttonColor: Color(0xFFF8F8F8),
                     fontsize: 16,
                     fontWeight: FontWeight.w400,
@@ -140,6 +142,7 @@ class HomeView extends GetView<HomeController> {
                     title: '취소',
                   ),
                   CustomButton(
+                    borderSide: BorderSide.none,
                     buttonColor: primaryColor,
                     fontsize: 16,
                     fontWeight: FontWeight.w400,

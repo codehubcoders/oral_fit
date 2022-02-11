@@ -6,6 +6,8 @@ import '../modules/chat/bindings/chat_binding.dart';
 import '../modules/chat/views/chat_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/home_step02/bindings/home_step02_binding.dart';
+import '../modules/home_step02/views/home_step02_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/navigationbar/bindings/navigationbar_binding.dart';
@@ -57,6 +59,11 @@ class AppPages {
       name: _Paths.ALARM,
       page: () => AlarmView(),
       binding: AlarmBinding(),
+    ),
+    GetPage(
+      name: _Paths.HOME_STEP02,
+      page: () => HomeStep02View(),
+      binding: HomeStep02Binding(),
     ),
   ];
 }

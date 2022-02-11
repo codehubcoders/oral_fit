@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:oral_fit/app/modules/home_step02/views/home_step02_view.dart';
 
 class HomeController extends GetxController {
   final selectedIndex01 = 0.obs;
@@ -27,6 +28,7 @@ class HomeController extends GetxController {
   final userNameCtl = TextEditingController();
   final selectedDate = ''.obs;
   void nextStep02() {
+    Get.toNamed('/home-step02');
     print(selectedIndex01.value);
     print(selectedName.value);
     print(selectedIndex03.value);
