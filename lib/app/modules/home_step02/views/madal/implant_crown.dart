@@ -270,33 +270,3 @@ implantSelect03(String text, int index) {
         ),
       ));
 }
-
-implantDropdown02() {
-  final _ = Get.find<HomeStep02Controller>();
-  return Container(
-      padding: EdgeInsets.only(left: 20, right: 20),
-      height: 43,
-      width: Get.width,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: greyLiteColorD)),
-      child: Obx(() => DropdownButtonHideUnderline(
-              child: DropdownButton(
-            onChanged: _.dropDownOn02,
-            value: _.implantValue.value,
-            icon: Icon(
-              Icons.keyboard_arrow_down,
-              size: 30,
-              color: greySubLiteColor9,
-            ),
-            items: _.implantList02.map((selectedType) {
-              return DropdownMenuItem(
-                child: Text(
-                  selectedType,
-                  style: TextStyle(fontSize: 14),
-                ),
-                value: selectedType,
-              );
-            }).toList(),
-          ))));
-}

@@ -7,6 +7,7 @@ import '../../controllers/home_step02_controller.dart';
 void crackCrown(BuildContext context) {
   final _ = Get.find<HomeStep02Controller>();
   showModalBottomSheet<void>(
+      backgroundColor: whiteColor,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
             topLeft: Radius.circular(20), topRight: Radius.circular(20)),
@@ -27,7 +28,7 @@ void crackCrown(BuildContext context) {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          ' 폰틱 타입',
+                          '지대치 프렙 크라운/인레이',
                           style: TextStyle(
                               color: greyDarkColor5,
                               fontSize: 18,
@@ -45,7 +46,7 @@ void crackCrown(BuildContext context) {
                     ),
                     SizedBox(height: 15),
                     Text(
-                      '어버트먼트',
+                      '보험여부',
                       style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w600,
@@ -60,12 +61,39 @@ void crackCrown(BuildContext context) {
                       ],
                     ),
                     SizedBox(height: 10),
-                    implantDropdown02(),
+                    Container(
+                        padding: EdgeInsets.only(left: 20, right: 20),
+                        height: 43,
+                        width: Get.width,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(color: greyLiteColorD)),
+                        child: Obx(() => DropdownButtonHideUnderline(
+                                child: DropdownButton(
+                              onChanged: _.crackdropDownOn,
+                              value: _.crackdropDown.value,
+                              icon: Icon(
+                                Icons.keyboard_arrow_down,
+                                size: 30,
+                                color: greySubLiteColor9,
+                              ),
+                              items: _.crackList.map((selectedType) {
+                                return DropdownMenuItem(
+                                  child: Text(
+                                    selectedType,
+                                    style: TextStyle(fontSize: 14),
+                                  ),
+                                  value: selectedType,
+                                );
+                              }).toList(),
+                            )))),
                   ],
                 ),
               ),
               GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Get.back();
+                  },
                   child: Container(
                     alignment: Alignment.center,
                     width: Get.width,
@@ -112,34 +140,4 @@ crackSelect(String text, int index) {
           ),
         ),
       ));
-}
-
-implantDropdown02() {
-  final _ = Get.find<HomeStep02Controller>();
-  return Container(
-      padding: EdgeInsets.only(left: 20, right: 20),
-      height: 43,
-      width: Get.width,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: greyLiteColorD)),
-      child: Obx(() => DropdownButtonHideUnderline(
-              child: DropdownButton(
-            onChanged: _.dropDownOn02,
-            value: _.implantValue.value,
-            icon: Icon(
-              Icons.keyboard_arrow_down,
-              size: 30,
-              color: greySubLiteColor9,
-            ),
-            items: _.implantList02.map((selectedType) {
-              return DropdownMenuItem(
-                child: Text(
-                  selectedType,
-                  style: TextStyle(fontSize: 14),
-                ),
-                value: selectedType,
-              );
-            }).toList(),
-          ))));
 }

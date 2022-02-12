@@ -35,9 +35,13 @@ class HomeStep02Controller extends GetxController {
   final dropDown01 = '커스텀 어버트먼트'.obs;
   void dropDownOn01(String? value) => dropDown01.value = value!;
 
-  final implantList02 = ['임플란트 브랜드(시스템)', '임플란트 브랜드(시스템)1', '임플란트 브랜드(시스템)'];
-  final implantValue = '임플란트 브랜드(시스템)'.obs;
-  void dropDownOn02(String? value) => implantValue.value = value!;
+  final crackList = [
+    'Solid Zirconia Crown',
+    'Solid Zirconia Crown1',
+    'Solid Zirconia Crown2'
+  ];
+  final crackdropDown = 'Solid Zirconia Crown'.obs;
+  void crackdropDownOn(String? value) => dropDown01.value = value!;
 
   @override
   void onInit() {
