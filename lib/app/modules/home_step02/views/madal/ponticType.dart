@@ -15,7 +15,7 @@ void ponticType(BuildContext context) {
       context: context,
       builder: (BuildContext context) {
         return Container(
-          height: Get.height * 0.47,
+          height: Get.height * 0.45,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

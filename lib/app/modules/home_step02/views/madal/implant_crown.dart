@@ -62,7 +62,7 @@ void implantCrown(BuildContext context) {
                       ],
                     ),
                     SizedBox(height: 10),
-                    implantDropdown01(),
+                    // implantDropdown01(),
                     SizedBox(height: 20),
                     Text(
                       '픽스쳐 제조사',
@@ -80,7 +80,7 @@ void implantCrown(BuildContext context) {
                       ],
                     ),
                     SizedBox(height: 10),
-                    implantDropdown01(),
+                    ImplantCrown01(),
                     SizedBox(height: 20),
                     Text(
                       '힐링코핑',
@@ -98,9 +98,9 @@ void implantCrown(BuildContext context) {
                       ],
                     ),
                     SizedBox(height: 10),
-                    implantDropdown01(),
+                    // implantDropdown01(),
                     SizedBox(height: 10),
-                    implantDropdown01(),
+                    // implantDropdown01(),
                     SizedBox(height: 10),
                     Container(
                       alignment: Alignment.centerRight,
@@ -118,9 +118,9 @@ void implantCrown(BuildContext context) {
                           color: greyDarkColor5),
                     ),
                     SizedBox(height: 10),
-                    implantDropdown01(),
+                    // implantDropdown01(),
                     SizedBox(height: 10),
-                    implantDropdown01(),
+                    // implantDropdown01(),
                     SizedBox(height: 10),
                   ],
                 ),
@@ -175,36 +175,6 @@ implantSelect01(String text, int index) {
           ),
         ),
       ));
-}
-
-implantDropdown01() {
-  final _ = Get.find<HomeStep02Controller>();
-  return Container(
-      padding: EdgeInsets.only(left: 20, right: 20),
-      height: 43,
-      width: Get.width,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: greyLiteColorD)),
-      child: Obx(() => DropdownButtonHideUnderline(
-              child: DropdownButton(
-            onChanged: _.dropDownOn01,
-            value: _.dropDown01.value,
-            icon: Icon(
-              Icons.keyboard_arrow_down,
-              size: 30,
-              color: greySubLiteColor9,
-            ),
-            items: _.dropDownList01.map((selectedType) {
-              return DropdownMenuItem(
-                child: Text(
-                  selectedType,
-                  style: TextStyle(fontSize: 14),
-                ),
-                value: selectedType,
-              );
-            }).toList(),
-          ))));
 }
 
 implantSelect02(String text, int index) {
@@ -269,4 +239,40 @@ implantSelect03(String text, int index) {
           ),
         ),
       ));
+}
+
+class ImplantCrown01 extends GetView {
+  @override
+  Widget build(BuildContext context) {
+    return GetX<HomeStep02Controller>(
+      builder: (_) {
+        return Container(
+            padding: EdgeInsets.only(left: 20, right: 20),
+            height: 43,
+            width: Get.width,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: greyLiteColorD)),
+            child: DropdownButtonHideUnderline(
+                child: DropdownButton(
+              onChanged: _.dropDownOn01,
+              value: _.dropDown01.value,
+              icon: Icon(
+                Icons.keyboard_arrow_down,
+                size: 30,
+                color: greySubLiteColor9,
+              ),
+              items: _.dropDownList01.map((selectedType) {
+                return DropdownMenuItem(
+                  child: Text(
+                    selectedType,
+                    style: TextStyle(fontSize: 14),
+                  ),
+                  value: selectedType,
+                );
+              }).toList(),
+            )));
+      },
+    );
+  }
 }

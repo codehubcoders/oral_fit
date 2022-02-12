@@ -1,4 +1,4 @@
-#Sat Feb 12 15:48:57 KST 2022
+#Sat Feb 12 16:26:22 KST 2022
 base.0=/Users/sangsookma/Desktop/project01/oral_fit/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
