@@ -86,7 +86,7 @@ class HomeView extends GetView<HomeController> {
                 '의뢰서유형',
                 style: TextStyle(
                     fontSize: 16,
-                    color: Color(0xff666666),
+                    color: greyDarkColor6,
                     fontWeight: FontWeight.w700),
               ),
               SizedBox(height: 10),
@@ -96,7 +96,7 @@ class HomeView extends GetView<HomeController> {
                 '기공소명',
                 style: TextStyle(
                     fontSize: 16,
-                    color: Color(0xff666666),
+                    color: greyDarkColor6,
                     fontWeight: FontWeight.w700),
               ),
               SizedBox(height: 10),
@@ -106,7 +106,7 @@ class HomeView extends GetView<HomeController> {
                 '임프레션 유형',
                 style: TextStyle(
                     fontSize: 16,
-                    color: Color(0xff666666),
+                    color: greyDarkColor6,
                     fontWeight: FontWeight.w700),
               ),
               SizedBox(height: 10),
@@ -116,7 +116,7 @@ class HomeView extends GetView<HomeController> {
                 '주문정보',
                 style: TextStyle(
                     fontSize: 16,
-                    color: Color(0xff666666),
+                    color: greyDarkColor6,
                     fontWeight: FontWeight.w700),
               ),
               SizedBox(height: 10),

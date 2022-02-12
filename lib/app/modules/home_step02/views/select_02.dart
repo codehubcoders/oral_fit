@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:oral_fit/app/core/theme/theme_data.dart';
+import 'package:oral_fit/app/modules/home_step02/views/madal/ponticType.dart';
 
 import '../../../global_widget/sleect_box_step02.dart';
 import '../controllers/home_step02_controller.dart';
@@ -20,6 +21,9 @@ class Step02Selecte02 extends GetView {
           return Obx(() => GestureDetector(
               onTap: () {
                 _.step02Select02.value = index;
+                if (_.step02Select02.value == 2) {
+                  ponticType(context);
+                }
               },
               child: _.step02Select02.value == index
                   ? SelectedBoxStep02(

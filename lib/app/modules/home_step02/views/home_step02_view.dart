@@ -16,7 +16,7 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
     return Scaffold(
       backgroundColor: whiteColor,
       appBar: AppBar(
-        // automaticallyImplyLeading: false,
+        automaticallyImplyLeading: false,
         elevation: 0,
         toolbarHeight: 62,
         backgroundColor: primaryDarkColor,
@@ -85,7 +85,7 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
                         '주문종류',
                         style: TextStyle(
                             fontSize: 16,
-                            color: Color(0xff666666),
+                            color: greyDarkColor6,
                             fontWeight: FontWeight.w700),
                       ),
                       SizedBox(height: 10),
@@ -95,7 +95,7 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
                         '임플란트 연결 상태',
                         style: TextStyle(
                             fontSize: 16,
-                            color: Color(0xff666666),
+                            color: greyDarkColor6,
                             fontWeight: FontWeight.w700),
                       ),
                       SizedBox(height: 10),
@@ -105,7 +105,7 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
                         '크라운의 종류',
                         style: TextStyle(
                             fontSize: 16,
-                            color: Color(0xff666666),
+                            color: greyDarkColor6,
                             fontWeight: FontWeight.w700),
                       ),
                       SizedBox(height: 10),
@@ -114,7 +114,7 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
                     ])),
             Container(
               color: Color(0xFFF9F9F9),
-              padding: EdgeInsets.fromLTRB(15, 10, 15, 15),
+              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
               width: Get.width,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -123,22 +123,23 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
                     '선택 결과',
                     style: TextStyle(
                         fontSize: 16,
-                        color: Color(0xff666666),
+                        color: greyDarkColor6,
                         fontWeight: FontWeight.w700),
                   ),
                   SizedBox(height: 10),
                   ResultContainer(),
-                  SizedBox(height: 10),
+                  SizedBox(height: 15),
                   Text(
                     '추가 선택을 원하시면, 먼저 선택 결과를 저장하고 처음부터 다시 진행해주세요.',
-                    style: TextStyle(fontSize: 12, color: Color(0xFF666666)),
-                  ),
+                    style: TextStyle(fontSize: 12, color: greyDarkColor6),
+                  )
                 ],
               ),
             ),
             SizedBox(height: 10),
+
             Container(
-              padding: EdgeInsets.fromLTRB(15, 0, 15, 15),
+              padding: EdgeInsets.fromLTRB(15, 10, 15, 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -160,10 +161,10 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
                     child: Text(
                       '저장 목록이 비어있습니다.\n선택결과를 확인하시고 ‘선택저장’을 눌러주세요.',
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 12, color: Color(0xFF666666)),
+                      style: TextStyle(fontSize: 12, color: greyDarkColor6),
                     ),
                   ),
-                  SizedBox(height: 30),
+                  SizedBox(height: 60),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -172,7 +173,9 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
                         buttonColor: Color(0xFFF8F8F8),
                         fontsize: 16,
                         fontWeight: FontWeight.w400,
-                        onTap: () {},
+                        onTap: () {
+                          Get.toNamed('/home');
+                        },
                         size: Size(Get.width * 0.3, 54),
                         textColor: greySubLiteColor9,
                         title: '이전',
@@ -191,7 +194,21 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
                   ),
                 ],
               ),
-            ),
+            )
+            // Container(
+            //     padding: EdgeInsets.fromLTRB(15, 10, 15, 15),
+            //     alignment: Alignment.centerLeft,
+            //     child: Column(children: [
+            //       Text(
+            //         '저장목록',
+            //         style: TextStyle(
+            //             color: greyDarkColor5,
+            //             fontWeight: FontWeight.w700,
+            //             fontSize: 16),
+            //       ),
+            //       ResultContainer(),
+            //     ]),
+            //   )
           ]),
         ),
       ),
@@ -206,4 +223,27 @@ lineContainer({double? size, Color? color}) {
     height: size,
     color: color,
   );
+}
+
+saveMoreBox() {
+  return Center(
+      child: Container(
+          padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+          child: Column(
+            children: [
+              Text(
+                '저장 완료',
+                style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                    color: greyDarkColor5),
+              ),
+              SizedBox(height: 20),
+              Text(
+                '추가 주문을 원하시면\n상단으로 이동하여 다시 진행해주세요.',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 12, color: greyDarkColor6),
+              ),
+            ],
+          )));
 }

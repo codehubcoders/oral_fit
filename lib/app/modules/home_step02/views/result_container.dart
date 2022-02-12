@@ -8,6 +8,7 @@ import '../controllers/home_step02_controller.dart';
 class ResultContainer extends GetView {
   @override
   Widget build(BuildContext context) {
+    final _ = Get.find<HomeStep02Controller>();
     return Center(
       child: Container(
           padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
@@ -15,7 +16,7 @@ class ResultContainer extends GetView {
           decoration: BoxDecoration(
               color: whiteColor,
               borderRadius: BorderRadius.circular(8),
-              border: Border.all(color: Color(0xFF666666))),
+              border: Border.all(color: greyDarkColor6)),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -39,8 +40,10 @@ class ResultContainer extends GetView {
                   subtitle: '오스템 레귤러 픽스쳐',
                   fontWeight: FontWeight.w400),
               SizedBox(height: 5),
-              samllbox(title: '크라운+어버트먼트 본딩'),
-              SizedBox(height: 8),
+              resultBox(
+                  title: '크라운+어버트먼트 본딩',
+                  subtitle: '',
+                  fontWeight: FontWeight.w400),
               Text(
                 'Zirconia Layered Implant Crown\n(전치 Labial 빌드업)',
                 style: TextStyle(fontSize: 14),
@@ -168,20 +171,6 @@ resultBox({String? title, String? subtitle, FontWeight? fontWeight}) {
   );
 }
 
-samllbox({String? title}) {
-  return Container(
-    height: 25,
-    decoration: BoxDecoration(
-        color: primaryColor, borderRadius: BorderRadius.circular(2)),
-    padding: EdgeInsets.fromLTRB(10, 4, 10, 4),
-    margin: EdgeInsets.only(right: 5),
-    child: Text(
-      title!,
-      style: TextStyle(color: whiteColor, fontSize: 12),
-    ),
-  );
-}
-
 samllboxLine({String? title}) {
   return Container(
     height: 25,
@@ -196,4 +185,25 @@ samllboxLine({String? title}) {
       style: TextStyle(color: selectFontColor, fontSize: 12),
     ),
   );
+}
+
+saveMoreBox() {
+  return Center(
+      child: Container(
+          padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+          child: Column(
+            children: [
+              Text(
+                '저장 완료',
+                style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                    color: greyDarkColor5),
+              ),
+              Text(
+                '추가 주문을 원하시면\n상단으로 이동하여 다시 진행해주세요.',
+                style: TextStyle(fontSize: 12, color: greyDarkColor6),
+              ),
+            ],
+          )));
 }
