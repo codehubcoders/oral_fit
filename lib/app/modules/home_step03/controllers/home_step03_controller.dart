@@ -1,4 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:oral_fit/app/core/theme/theme_data.dart';
 
 class HomeStep03Controller extends GetxController {
   final dropdownValue01 = '쉐이드 종류01'.obs;
@@ -20,4 +22,34 @@ class HomeStep03Controller extends GetxController {
 
   @override
   void onClose() {}
+
+  final checkCall = false.obs;
+  final checkDesign = false.obs;
+
+  final selectImg = ''.obs;
+  final imgList = ['해당없음', '카카오톡 전송', '이메일 전송', '스캔파일 업로드'].obs;
+  final selectImgValue = ''.obs;
+  void onlickRadioButtonImg(value) {
+    print(value);
+    selectImgValue.value = value;
+    update();
+  }
+
+  final otherInput = TextEditingController();
+
+  final scanImg = ''.obs;
+  final scanImgList = [
+    '3Shape Communicate 업로드',
+    'Medit Link',
+    '스캔파일 업로드',
+    '이메일 전송',
+    '임프레션 수거요청',
+    '임프레션 택배발송'
+  ].obs;
+  final scanImgValue = ''.obs;
+  void onlickRadioButtonScanImg(value) {
+    print(value);
+    scanImgValue.value = value;
+    update();
+  }
 }
