@@ -11,6 +11,7 @@ abstract class Routes {
   static const CHAT = _Paths.CHAT;
   static const ALARM = _Paths.ALARM;
   static const HOME_STEP02 = _Paths.HOME_STEP02;
+  static const HOME_STEP03 = _Paths.HOME_STEP03;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const CHAT = '/chat';
   static const ALARM = '/alarm';
   static const HOME_STEP02 = '/home-step02';
+  static const HOME_STEP03 = '/home-step03';
 }

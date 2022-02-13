@@ -185,7 +185,9 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
                         buttonColor: primaryColor,
                         fontsize: 16,
                         fontWeight: FontWeight.w400,
-                        onTap: () {},
+                        onTap: () {
+                          Get.toNamed('/home-step03');
+                        },
                         size: Size(Get.width * 0.6, 54),
                         textColor: whiteColor,
                         title: '다음  >',
@@ -244,6 +246,7 @@ saveMoreBox() {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 12, color: greyDarkColor6),
               ),
+              SizedBox(height: 20),
             ],
           )));
 }

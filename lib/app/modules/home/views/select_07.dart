@@ -21,7 +21,7 @@ class Step07Dropdown extends GetView {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            '담당의사',
+            '담당스탭',
             style: TextStyle(fontSize: 12, color: greySubDarkColor7),
           ),
           Obx(() => DropdownButtonHideUnderline(

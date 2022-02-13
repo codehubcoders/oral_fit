@@ -24,7 +24,9 @@ class Step02Selecte03 extends GetView {
                 _.step02Select03.value = index;
                 if (_.step02Select03.value == 0) {
                   implantCrown(context);
-                } else {
+                }
+
+                if (_.step02Select03.value == 1) {
                   crackCrown(context);
                 }
               },

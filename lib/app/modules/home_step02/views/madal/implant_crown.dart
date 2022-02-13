@@ -242,18 +242,17 @@ implantSelect03(String text, int index) {
 }
 
 class ImplantCrown01 extends GetView {
+  final _ = Get.find<HomeStep02Controller>();
   @override
   Widget build(BuildContext context) {
-    return GetX<HomeStep02Controller>(
-      builder: (_) {
-        return Container(
-            padding: EdgeInsets.only(left: 20, right: 20),
-            height: 43,
-            width: Get.width,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: greyLiteColorD)),
-            child: DropdownButtonHideUnderline(
+    return Container(
+        padding: EdgeInsets.only(left: 20, right: 20),
+        height: 43,
+        width: Get.width,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(color: greyLiteColorD)),
+        child: Obx(() => DropdownButtonHideUnderline(
                 child: DropdownButton(
               onChanged: _.dropDownOn01,
               value: _.dropDown01.value,
@@ -271,8 +270,6 @@ class ImplantCrown01 extends GetView {
                   value: selectedType,
                 );
               }).toList(),
-            )));
-      },
-    );
+            ))));
   }
 }

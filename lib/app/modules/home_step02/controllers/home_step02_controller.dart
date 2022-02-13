@@ -31,15 +31,20 @@ class HomeStep02Controller extends GetxController {
   final implant03 = 0.obs;
   final crackCrown = 0.obs;
 
-  final dropDownList01 = ['커스텀 어버트먼트', '커스텀 어버트먼트1', '커스텀 어버트먼트2'];
+  final dropDownList01 = [
+    '커스텀 어버트먼트',
+    // '커스텀 어버트먼트1',
+    // '커스텀 어버트먼트2'
+  ].obs;
   final dropDown01 = '커스텀 어버트먼트'.obs;
-  void dropDownOn01(String? value) => dropDown01.value = value!;
+  void dropDownOn01(String? value) async => dropDown01.value = value!;
 
   final crackList = [
     'Solid Zirconia Crown',
-    'Solid Zirconia Crown1',
-    'Solid Zirconia Crown2'
-  ];
+    // 'Solid Zirconia Crown1',
+    // 'Solid Zirconia Crown2'
+  ].obs;
+
   final crackdropDown = 'Solid Zirconia Crown'.obs;
   void crackdropDownOn(String? value) => dropDown01.value = value!;
 

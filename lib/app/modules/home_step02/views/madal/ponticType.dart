@@ -15,12 +15,12 @@ void ponticType(BuildContext context) {
       context: context,
       builder: (BuildContext context) {
         return Container(
-          height: Get.height * 0.45,
+          height: Get.height * 0.52,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
+                padding: EdgeInsets.fromLTRB(20, 15, 20, 0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

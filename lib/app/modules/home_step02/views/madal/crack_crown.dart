@@ -77,13 +77,13 @@ void crackCrown(BuildContext context) {
                                 size: 30,
                                 color: greySubLiteColor9,
                               ),
-                              items: _.crackList.map((selectedType) {
+                              items: _.crackList.map((String text) {
                                 return DropdownMenuItem(
                                   child: Text(
-                                    selectedType,
+                                    text,
                                     style: TextStyle(fontSize: 14),
                                   ),
-                                  value: selectedType,
+                                  value: text,
                                 );
                               }).toList(),
                             )))),

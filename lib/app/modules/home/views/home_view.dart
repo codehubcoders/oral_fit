@@ -63,7 +63,7 @@ class HomeView extends GetView<HomeController> {
                             fontWeight: FontWeight.w700, fontSize: 24),
                       ),
                       Text(
-                        '/02',
+                        '/03',
                         style: TextStyle(color: greyLiteColorD, fontSize: 24),
                       ),
                     ],

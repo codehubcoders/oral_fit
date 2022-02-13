@@ -14,7 +14,7 @@ void selectToothNumber(BuildContext context) {
       context: context,
       builder: (BuildContext context) {
         return Container(
-          height: Get.height * 0.45,
+          height: Get.height * 0.52,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
