@@ -8,7 +8,21 @@ class SearchButton extends GetView {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-        onTap: () {},
+        onTap: () {
+          showModalBottomSheet<void>(
+              backgroundColor: whiteColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(20),
+                    topRight: Radius.circular(20)),
+              ),
+              context: context,
+              builder: (BuildContext context) {
+                return Container(
+                  height: Get.height * 0.7,
+                );
+              });
+        },
         child: Container(
           width: 62,
           height: 32,
