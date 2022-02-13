@@ -12,7 +12,7 @@ final greySubLiteColor9 = Color(0xFF999999);
 final greyDarkColor5 = Color(0xFF555555);
 final greyDarkColor6 = Color(0xFF666666);
 final greySubDarkColor7 = Color(0xFF777777);
-
+final greyDarkColor3 = Color(0xFF333333);
 final primaryFontColor2 = Color(0xFF222222);
 
 final whiteColor = Colors.white;

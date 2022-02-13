@@ -209,7 +209,7 @@ class HomeStep03View extends GetView<HomeStep03Controller> {
                     fontsize: 16,
                     fontWeight: FontWeight.w400,
                     onTap: () {
-                      Get.toNamed('/home-step03');
+                      Get.offAllNamed('/navigationbar');
                     },
                     size: Size(Get.width * 0.6, 54),
                     textColor: whiteColor,
