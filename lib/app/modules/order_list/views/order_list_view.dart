@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -13,7 +11,17 @@ import '../controllers/order_list_controller.dart';
 class OrderListView extends GetView<OrderListController> {
   @override
   Widget build(BuildContext context) {
+    Get.lazyPut<OrderListController>(() => OrderListController());
+    final _ = Get.find<OrderListController>();
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: primaryColor,
+        onPressed: () => _.scan(),
+        child: Image.asset(
+          'assets/images/qrScan.png',
+          width: 25,
+        ),
+      ),
       backgroundColor: whiteColor,
       appBar: AppBar(
         automaticallyImplyLeading: false,

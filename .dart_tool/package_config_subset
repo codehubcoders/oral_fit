@@ -134,6 +134,14 @@ path_provider_windows
 2.12
 file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.5/
 file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.5/lib/
+permission_handler
+2.12
+file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-8.3.0/
+file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-8.3.0/lib/
+permission_handler_platform_interface
+2.14
+file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-3.7.0/
+file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-3.7.0/lib/
 persistent_bottom_nav_bar
 2.12
 file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/persistent_bottom_nav_bar-4.0.2/
@@ -154,6 +162,10 @@ process
 2.14
 file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.2.4/
 file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.2.4/lib/
+qrscan
+2.12
+file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/qrscan-0.3.2/
+file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/qrscan-0.3.2/lib/
 source_span
 2.12
 file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.1/

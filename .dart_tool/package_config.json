@@ -218,6 +218,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "permission_handler",
+      "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-8.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "permission_handler_platform_interface",
+      "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-3.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "persistent_bottom_nav_bar",
       "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/persistent_bottom_nav_bar-4.0.2",
       "packageUri": "lib/",
@@ -246,6 +258,12 @@
       "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.2.4",
       "packageUri": "lib/",
       "languageVersion": "2.14"
+    },
+    {
+      "name": "qrscan",
+      "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/qrscan-0.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "sky_engine",
@@ -344,7 +362,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-02-13T07:40:08.122664Z",
+  "generated": "2022-02-14T04:05:48.593374Z",
   "generator": "pub",
   "generatorVersion": "2.16.1"
 }
