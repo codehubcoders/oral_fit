@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:oral_fit/app/modules/order_list/views/order_detail/order_ditail.dart';
 
 import '../../../core/theme/theme_data.dart';
 
@@ -36,7 +37,9 @@ class OrderListBox extends GetView {
                   ],
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(OrderDetail());
+                  },
                   child: Text('주문상세',
                       style: TextStyle(fontSize: 14, color: primaryFontColor2)),
                 )

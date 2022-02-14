@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:permission_handler/permission_handler.dart';
+
 import 'package:qrscan/qrscan.dart' as scanner;
 
 class OrderListController extends GetxController {

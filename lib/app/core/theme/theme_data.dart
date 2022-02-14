@@ -14,6 +14,7 @@ final greyDarkColor6 = Color(0xFF666666);
 final greySubDarkColor7 = Color(0xFF777777);
 final greyDarkColor3 = Color(0xFF333333);
 final primaryFontColor2 = Color(0xFF222222);
+final orengeColor = Color(0xFFF5941F);
 
 final whiteColor = Colors.white;
 

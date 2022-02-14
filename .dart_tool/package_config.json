@@ -3,7 +3,7 @@
   "packages": [
     {
       "name": "archive",
-      "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.1.11",
+      "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -177,7 +177,7 @@
     },
     {
       "name": "path_provider",
-      "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.8",
+      "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.9",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -362,7 +362,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-02-14T04:05:48.593374Z",
+  "generated": "2022-02-14T05:16:48.161536Z",
   "generator": "pub",
   "generatorVersion": "2.16.1"
 }
