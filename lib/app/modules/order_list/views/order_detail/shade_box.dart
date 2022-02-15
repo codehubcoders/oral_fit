@@ -178,7 +178,8 @@ class EditDateBox extends GetView {
                                     border:
                                         Border.all(color: primaryFontColor2),
                                     image: DecorationImage(
-                                      image: AssetImage(_.shadeImgList[index]),
+                                      image: AssetImage(
+                                          'assets/images/shadeimg.png'),
                                       fit: BoxFit.fill,
                                     )),
                               ),

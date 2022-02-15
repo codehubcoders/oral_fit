@@ -1,9 +1,10 @@
 import 'package:get/get.dart';
 
 class ChatController extends GetxController {
-  //TODO: Implement ChatController
+  final chatListInt = 0.obs;
 
-  final count = 0.obs;
+  final isCurrentUser = false;
+
   @override
   void onInit() {
     super.onInit();
@@ -16,5 +17,6 @@ class ChatController extends GetxController {
 
   @override
   void onClose() {}
-  void increment() => count.value++;
+
+  final message = [].obs;
 }
