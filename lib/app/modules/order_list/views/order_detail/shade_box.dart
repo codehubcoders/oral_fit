@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:get/get.dart';
 import 'package:oral_fit/app/core/theme/theme_data.dart';
 import 'package:oral_fit/app/modules/order_list/views/order_detail/order_ditail.dart';
+
+import '../../controllers/order_list_controller.dart';
 
 class ShadeBox extends GetView {
   const ShadeBox({Key? key}) : super(key: key);
@@ -113,6 +115,7 @@ class EditDateBox extends GetView {
 
   @override
   Widget build(BuildContext context) {
+    final _ = Get.find<OrderListController>();
     return GridView.count(
         shrinkWrap: true,
         mainAxisSpacing: 10,
@@ -122,7 +125,83 @@ class EditDateBox extends GetView {
         crossAxisCount: 4,
         children: List.generate(4, (index) {
           return GestureDetector(
-            onTap: () {},
+            onTap: () {
+              showGeneralDialog(
+                  context: context,
+                  barrierDismissible: false,
+                  barrierLabel: MaterialLocalizations.of(context)
+                      .modalBarrierDismissLabel,
+                  transitionDuration: const Duration(milliseconds: 200),
+                  pageBuilder: (BuildContext buildContext, Animation animation,
+                      Animation secondaryAnimation) {
+                    return Scaffold(
+                      body: Center(
+                        child: Container(
+                          width: Get.width,
+                          height: Get.height * 0.9,
+                          color: Colors.white,
+                          child: Column(
+                            children: [
+                              Container(
+                                padding: EdgeInsets.all(20),
+                                alignment: Alignment.centerLeft,
+                                color: greyDarkColor3,
+                                height: Get.height * 0.1,
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text('Shade 이미지 보기',
+                                        style: TextStyle(
+                                            color: whiteColor,
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.w700)),
+                                    IconButton(
+                                        onPressed: () {
+                                          Get.back();
+                                        },
+                                        icon: Icon(
+                                          Icons.close,
+                                          color: whiteColor,
+                                        ))
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                height: Get.height * 0.05,
+                                color: primaryFontColor2,
+                              ),
+                              Container(
+                                height: Get.height * 0.6,
+                                decoration: BoxDecoration(
+                                    border:
+                                        Border.all(color: primaryFontColor2),
+                                    image: DecorationImage(
+                                      image: AssetImage(_.shadeImgList[index]),
+                                      fit: BoxFit.fill,
+                                    )),
+                              ),
+                              Container(
+                                height: Get.height * 0.05,
+                                color: primaryFontColor2,
+                              ),
+                              Container(
+                                padding: EdgeInsets.only(
+                                    left: 20, right: 20, bottom: 35),
+                                alignment: Alignment.topLeft,
+                                height: Get.height * 0.1,
+                                width: Get.width,
+                                color: greyDarkColor3,
+                                child: shadePreviewList(),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    );
+                  });
+            },
             child: Container(
               alignment: Alignment.center,
               decoration: BoxDecoration(
@@ -136,4 +215,28 @@ class EditDateBox extends GetView {
           );
         }));
   }
+}
+
+shadePreviewList() {
+  final _ = Get.find<OrderListController>();
+  return ListView.builder(
+    shrinkWrap: true,
+    physics: NeverScrollableScrollPhysics(),
+    scrollDirection: Axis.horizontal,
+    itemCount: 3,
+    itemBuilder: (BuildContext context, int index) {
+      return GestureDetector(
+          onTap: () {},
+          child: Container(
+            height: 45,
+            width: 45,
+            decoration: BoxDecoration(
+                border: Border.all(color: primaryFontColor2),
+                image: DecorationImage(
+                  image: AssetImage(_.shadeImgList[index]),
+                  fit: BoxFit.fill,
+                )),
+          ));
+    },
+  );
 }

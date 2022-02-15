@@ -5,6 +5,11 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:qrscan/qrscan.dart' as scanner;
 
 class OrderListController extends GetxController {
+  List shadeImgList = [
+    'assets/images/shadeimg.png',
+    'assets/images/shadeimg.png',
+    'assets/images/shadeimg.png'
+  ];
   Future<bool> requestPermission() async {
     Map<Permission, PermissionStatus> statues =
         await [Permission.storage, Permission.camera].request();
