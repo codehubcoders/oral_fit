@@ -12,6 +12,8 @@ abstract class Routes {
   static const ALARM = _Paths.ALARM;
   static const HOME_STEP02 = _Paths.HOME_STEP02;
   static const HOME_STEP03 = _Paths.HOME_STEP03;
+  static const PICK_UP_RESERVATION = _Paths.PICK_UP_RESERVATION;
+  static const SETTING = _Paths.SETTING;
 }
 
 abstract class _Paths {
@@ -25,4 +27,6 @@ abstract class _Paths {
   static const ALARM = '/alarm';
   static const HOME_STEP02 = '/home-step02';
   static const HOME_STEP03 = '/home-step03';
+  static const PICK_UP_RESERVATION = '/pick-up-reservation';
+  static const SETTING = '/setting';
 }

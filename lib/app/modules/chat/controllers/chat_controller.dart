@@ -18,5 +18,5 @@ class ChatController extends GetxController {
   @override
   void onClose() {}
 
-  final message = [].obs;
+  final message = [{}].obs;
 }

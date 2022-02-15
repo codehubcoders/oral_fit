@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/Pick_up_reservation/bindings/pick_up_reservation_binding.dart';
+import '../modules/Pick_up_reservation/views/pick_up_reservation_view.dart';
 import '../modules/alarm/bindings/alarm_binding.dart';
 import '../modules/alarm/views/alarm_view.dart';
 import '../modules/chat/bindings/chat_binding.dart';
@@ -16,6 +18,8 @@ import '../modules/navigationbar/bindings/navigationbar_binding.dart';
 import '../modules/navigationbar/views/navigationbar_view.dart';
 import '../modules/order_list/bindings/order_list_binding.dart';
 import '../modules/order_list/views/order_list_view.dart';
+import '../modules/setting/bindings/setting_binding.dart';
+import '../modules/setting/views/setting_view.dart';
 import '../modules/splash-screen/bindings/splash_screen_binding.dart';
 import '../modules/splash-screen/views/splash_screen_view.dart';
 
@@ -71,6 +75,16 @@ class AppPages {
       name: _Paths.HOME_STEP03,
       page: () => HomeStep03View(),
       binding: HomeStep03Binding(),
+    ),
+    GetPage(
+      name: _Paths.PICK_UP_RESERVATION,
+      page: () => PickUpReservationView(),
+      binding: PickUpReservationBinding(),
+    ),
+    GetPage(
+      name: _Paths.SETTING,
+      page: () => SettingView(),
+      binding: SettingBinding(),
     ),
   ];
 }

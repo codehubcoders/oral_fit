@@ -30,9 +30,14 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
             Row(
               children: [
                 IconButton(
-                    onPressed: () {}, icon: Icon(Icons.access_time, size: 25)),
+                    onPressed: () {
+                      Get.toNamed('/pick-up-reservation');
+                    },
+                    icon: Icon(Icons.access_time, size: 25)),
                 IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.toNamed('/setting');
+                    },
                     icon: Icon(Icons.settings_outlined, size: 25)),
               ],
             ),
@@ -174,7 +179,7 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
                         fontsize: 16,
                         fontWeight: FontWeight.w400,
                         onTap: () {
-                          Get.toNamed('/home');
+                          Get.toNamed('/navigationbar');
                         },
                         size: Size(Get.width * 0.3, 54),
                         textColor: greySubLiteColor9,

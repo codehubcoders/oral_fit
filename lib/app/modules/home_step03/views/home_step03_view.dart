@@ -29,10 +29,14 @@ class HomeStep03View extends GetView<HomeStep03Controller> {
               Row(
                 children: [
                   IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed('/pick-up-reservation');
+                      },
                       icon: Icon(Icons.access_time, size: 25)),
                   IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed('/setting');
+                      },
                       icon: Icon(Icons.settings_outlined, size: 25)),
                 ],
               ),

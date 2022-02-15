@@ -25,7 +25,6 @@ class AlrmDetail extends GetView {
                 margin: EdgeInsets.only(right: 15),
                 height: 40,
                 child: TextField(
-                  // controller: _.searchInput,
                   decoration: InputDecoration(
                     suffixIcon: IconButton(
                       icon: Icon(

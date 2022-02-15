@@ -38,7 +38,10 @@ class OrderListView extends GetView<OrderListController> {
             Row(
               children: [
                 IconButton(
-                    onPressed: () {}, icon: Icon(Icons.access_time, size: 25)),
+                    onPressed: () {
+                      Get.toNamed('/pick-up-reservation');
+                    },
+                    icon: Icon(Icons.access_time, size: 25)),
                 IconButton(
                     onPressed: () {},
                     icon: Icon(Icons.settings_outlined, size: 25)),

@@ -266,6 +266,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "simple_gesture_detector",
+      "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/simple_gesture_detector-0.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -298,6 +304,12 @@
     {
       "name": "string_scanner",
       "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "table_calendar",
+      "rootUri": "file:///usr/local/Caskroom/flutter/2.10.0/flutter/.pub-cache/hosted/pub.dartlang.org/table_calendar-3.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -362,7 +374,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-02-15T00:26:36.626596Z",
+  "generated": "2022-02-15T07:54:58.150404Z",
   "generator": "pub",
   "generatorVersion": "2.16.1"
 }

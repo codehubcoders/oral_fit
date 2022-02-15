@@ -27,9 +27,14 @@ class AlarmView extends GetView<AlarmController> {
             Row(
               children: [
                 IconButton(
-                    onPressed: () {}, icon: Icon(Icons.access_time, size: 25)),
+                    onPressed: () {
+                      Get.toNamed('/pick-up-reservation');
+                    },
+                    icon: Icon(Icons.access_time, size: 25)),
                 IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.toNamed('/setting');
+                    },
                     icon: Icon(Icons.settings_outlined, size: 25)),
               ],
             ),
