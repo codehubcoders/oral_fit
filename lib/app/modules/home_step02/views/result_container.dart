@@ -5,7 +5,7 @@ import 'package:oral_fit/app/global_widget/custom_button.dart';
 import '../../../core/theme/theme_data.dart';
 import '../controllers/home_step02_controller.dart';
 
-class ResultContainer extends GetView {
+class ResultContainer extends GetView<HomeStep02Controller> {
   @override
   Widget build(BuildContext context) {
     final _ = Get.find<HomeStep02Controller>();
@@ -20,9 +20,22 @@ class ResultContainer extends GetView {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                '임플란트 크라운',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    '임플란트 크라운',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+                  ),
+                  !_.saveResultButton.value
+                      ? IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.close,
+                            color: greySubLiteColor9,
+                          ))
+                      : Container()
+                ],
               ),
               Divider(
                 color: greyLiteColorD,
@@ -133,7 +146,10 @@ class ResultContainer extends GetView {
                     buttonColor: primaryColor,
                     fontsize: 14,
                     fontWeight: FontWeight.w700,
-                    onTap: () {},
+                    onTap: () {
+                      _.saveResultButton.value = !_.saveResultButton.value;
+                      print(_.saveResultButton.value);
+                    },
                     size: Size(Get.width * 0.4, 43),
                     textColor: whiteColor,
                     title: '선택 저장',
@@ -185,25 +201,4 @@ samllboxLine({String? title}) {
       style: TextStyle(color: selectFontColor, fontSize: 12),
     ),
   );
-}
-
-saveMoreBox() {
-  return Center(
-      child: Container(
-          padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-          child: Column(
-            children: [
-              Text(
-                '저장 완료',
-                style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w700,
-                    color: greyDarkColor5),
-              ),
-              Text(
-                '추가 주문을 원하시면\n상단으로 이동하여 다시 진행해주세요.',
-                style: TextStyle(fontSize: 12, color: greyDarkColor6),
-              ),
-            ],
-          )));
 }

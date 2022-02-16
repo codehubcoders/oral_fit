@@ -4,8 +4,9 @@ import 'package:oral_fit/app/core/theme/theme_data.dart';
 
 import '../../../global_widget/selected_box.dart';
 import '../controllers/home_step02_controller.dart';
-import 'madal/crack_crown.dart';
+
 import 'madal/implant_crown.dart';
+import 'madal/prep_crown.dart';
 
 class Step02Selecte03 extends GetView {
   final _ = Get.find<HomeStep02Controller>();
@@ -27,7 +28,7 @@ class Step02Selecte03 extends GetView {
                 }
 
                 if (_.step02Select03.value == 1) {
-                  crackCrown(context);
+                  prepCrown(context);
                 }
               },
               child: _.step02Select03.value == index

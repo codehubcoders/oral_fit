@@ -137,11 +137,51 @@ class NavigationbarView extends GetView<NavigationbarController> {
                   label: '주문목록',
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(FontAwesomeIcons.solidCommentDots),
+                  icon: Stack(children: [
+                    Icon(FontAwesomeIcons.solidCommentDots),
+                    Positioned(
+                      right: 0,
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 14,
+                        width: 14,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: Color(0xFFE05D5D)),
+                        child: Text(
+                          '3',
+                          style: TextStyle(
+                              fontSize: 10,
+                              color: whiteColor,
+                              fontWeight: FontWeight.w700),
+                        ),
+                      ),
+                    )
+                  ]),
                   label: '채팅',
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(FontAwesomeIcons.solidBell),
+                  icon: Stack(children: [
+                    Icon(FontAwesomeIcons.solidBell),
+                    Positioned(
+                      right: 0,
+                      child: Container(
+                        alignment: Alignment.center,
+                        height: 14,
+                        width: 14,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: Color(0xFFE05D5D)),
+                        child: Text(
+                          '3',
+                          style: TextStyle(
+                              fontSize: 10,
+                              color: whiteColor,
+                              fontWeight: FontWeight.w700),
+                        ),
+                      ),
+                    )
+                  ]),
                   label: '알림',
                 ),
               ],

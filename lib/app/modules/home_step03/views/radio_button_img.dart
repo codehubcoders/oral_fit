@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:oral_fit/app/core/theme/theme_data.dart';
+import 'package:oral_fit/app/modules/home_step03/views/addShade_dialog.dart';
 
 import '../controllers/home_step03_controller.dart';
 
@@ -103,11 +104,15 @@ class RadioButtonScan extends GetView {
                     borderRadius: BorderRadius.circular(8)),
                 child: Row(
                   children: [
-                    Icon(
-                      Icons.attach_file,
-                      size: 26,
-                      color: greyDarkColor5,
-                    ),
+                    IconButton(
+                        onPressed: () {
+                          addShadeImg();
+                        },
+                        icon: Icon(
+                          Icons.attach_file,
+                          size: 26,
+                          color: greyDarkColor5,
+                        )),
                     Container(
                       height: 32,
                       padding: EdgeInsets.only(left: 10),

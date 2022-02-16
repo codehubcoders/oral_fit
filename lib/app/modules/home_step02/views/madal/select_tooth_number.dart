@@ -68,7 +68,7 @@ void selectToothNumber(BuildContext context) {
                                                 height: 30,
                                                 child: Image.asset(
                                                   'assets/images/single.png',
-                                                  width: 28,
+                                                  width: 25,
                                                 ),
                                               )
                                             : Container(

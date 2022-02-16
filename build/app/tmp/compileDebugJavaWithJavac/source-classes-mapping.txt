@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+codehub/oral_fit/BuildConfig.java
+ codehub.oral_fit.BuildConfig
