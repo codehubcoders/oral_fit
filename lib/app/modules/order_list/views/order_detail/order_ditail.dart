@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:oral_fit/app/core/theme/theme_data.dart';
 import 'package:oral_fit/app/modules/order_list/views/order_detail/design_box.dart';
+import 'package:oral_fit/app/modules/order_list/views/order_detail/madal/add_gold.dart';
 import 'package:oral_fit/app/modules/order_list/views/order_detail/madal/work_history.dart';
 import 'package:oral_fit/app/modules/order_list/views/order_detail/orderinfo_box.dart';
 import 'package:oral_fit/app/modules/order_list/views/order_detail/shade_box.dart';
@@ -105,11 +106,16 @@ class OrderDetail extends GetView {
                               fontWeight: FontWeight.w700,
                               fontSize: 18),
                         ),
-                        smallBox(
-                            bgColor: whiteColor,
-                            title: '골드보기',
-                            fontColor: greyDarkColor3,
-                            border: greyLiteColorD)
+                        GestureDetector(
+                          onTap: () {
+                            addGoldModal();
+                          },
+                          child: smallBox(
+                              bgColor: whiteColor,
+                              title: '골드보기',
+                              fontColor: greyDarkColor3,
+                              border: greyLiteColorD),
+                        )
                       ],
                     ),
                     SizedBox(height: 20),

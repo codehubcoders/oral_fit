@@ -40,6 +40,7 @@ class OrderListController extends GetxController {
 
   @override
   void onClose() {}
+  final getGold = 0.obs;
 
   final dropdownName = '검색 및 선택'.obs;
   final dropdownNameList = ['검색 및 선택', '기공소명'].obs;

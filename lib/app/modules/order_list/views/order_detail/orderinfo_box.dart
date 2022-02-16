@@ -4,6 +4,7 @@ import 'package:oral_fit/app/modules/order_list/views/order_detail/madal/state_m
 import 'package:oral_fit/app/modules/order_list/views/order_detail/order_ditail.dart';
 
 import '../../../../core/theme/theme_data.dart';
+import 'madal/dental_info.dart';
 
 class OrderInfoBox extends GetView {
   @override
@@ -62,11 +63,15 @@ class OrderInfoBox extends GetView {
                 style: TextStyle(color: greyDarkColor3, fontSize: 14),
               ),
               SizedBox(width: 10),
-              smallBox(
-                  bgColor: whiteColor,
-                  title: '치과정보',
-                  fontColor: greyDarkColor3,
-                  border: greyLiteColorD)
+              GestureDetector(
+                  onTap: () {
+                    dentalInfoModal();
+                  },
+                  child: smallBox(
+                      bgColor: whiteColor,
+                      title: '치과정보',
+                      fontColor: greyDarkColor3,
+                      border: greyLiteColorD)),
             ],
           ),
           infoBox('기공소', '모두기공소'),
