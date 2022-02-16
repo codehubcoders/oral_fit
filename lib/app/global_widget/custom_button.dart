@@ -24,20 +24,20 @@ class CustomButton extends GetView {
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Obx(() => ElevatedButton(
-          onPressed: onTap,
-          child: Text(
-            title,
-            style: TextStyle(
-                fontSize: fontsize, color: textColor, fontWeight: fontWeight),
-          ),
-          style: ElevatedButton.styleFrom(
-              fixedSize: size,
-              primary: buttonColor,
-              side: borderSide,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0)),
-              elevation: 0.0),
-        ));
+    return ElevatedButton(
+      onPressed: onTap,
+      child: Text(
+        title,
+        style: TextStyle(
+            fontSize: fontsize, color: textColor, fontWeight: fontWeight),
+      ),
+      style: ElevatedButton.styleFrom(
+          fixedSize: size,
+          primary: buttonColor,
+          side: borderSide,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
+          elevation: 0.0),
+    );
   }
 }

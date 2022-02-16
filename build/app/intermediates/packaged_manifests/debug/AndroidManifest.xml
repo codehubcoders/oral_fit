@@ -5,7 +5,7 @@
     android:versionName="1.0.0" >
 
     <uses-sdk
-        android:minSdkVersion="20"
+        android:minSdkVersion="21"
         android:targetSdkVersion="31" />
     <!--
          Flutter needs it to communicate with the running application
@@ -72,6 +72,16 @@
             android:value="2" />
 
         <activity android:name="com.shinow.qrscan.SecondActivity" />
+
+        <provider
+            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+            android:authorities="codehub.oral_fit.flutter.image_provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/flutter_image_picker_file_paths" />
+        </provider>
 
         <uses-library
             android:name="androidx.window.extensions"

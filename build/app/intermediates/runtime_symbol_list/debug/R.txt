@@ -2774,3 +2774,4 @@ int styleable ViewfinderView_inner_scan_bitmap 5
 int styleable ViewfinderView_inner_scan_iscircle 6
 int styleable ViewfinderView_inner_scan_speed 7
 int styleable ViewfinderView_inner_width 8
+int xml flutter_image_picker_file_paths 0x7f110000

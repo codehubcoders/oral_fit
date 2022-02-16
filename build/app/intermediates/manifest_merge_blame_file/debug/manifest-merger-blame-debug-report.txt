@@ -5,7 +5,7 @@
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="20"
+8        android:minSdkVersion="21"
 9        android:targetSdkVersion="31" />
 10    <!--
 11         Flutter needs it to communicate with the running application
@@ -106,40 +106,58 @@
 74-->[:qrscan] /Users/sangsookma/Desktop/project01/oral_fit/build/qrscan/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-69
 74-->[:qrscan] /Users/sangsookma/Desktop/project01/oral_fit/build/qrscan/intermediates/library_manifest/debug/AndroidManifest.xml:27:19-66
 75
-76        <uses-library
-76-->[androidx.window:window:1.0.0-beta04] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-77            android:name="androidx.window.extensions"
-77-->[androidx.window:window:1.0.0-beta04] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-78            android:required="false" />
-78-->[androidx.window:window:1.0.0-beta04] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-79        <uses-library
-79-->[androidx.window:window:1.0.0-beta04] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-80            android:name="androidx.window.sidecar"
-80-->[androidx.window:window:1.0.0-beta04] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-81            android:required="false" />
-81-->[androidx.window:window:1.0.0-beta04] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-82
-83        <provider
-83-->[com.squareup.picasso:picasso:2.71828] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/6a6b5c223ccfe6bfe3e15d7b2d7d447e/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
-84            android:name="com.squareup.picasso.PicassoProvider"
-84-->[com.squareup.picasso:picasso:2.71828] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/6a6b5c223ccfe6bfe3e15d7b2d7d447e/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
-85            android:authorities="codehub.oral_fit.com.squareup.picasso"
-85-->[com.squareup.picasso:picasso:2.71828] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/6a6b5c223ccfe6bfe3e15d7b2d7d447e/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
-86            android:exported="false" />
-86-->[com.squareup.picasso:picasso:2.71828] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/6a6b5c223ccfe6bfe3e15d7b2d7d447e/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
-87
-88        <activity
-88-->[com.github.leyan95:android-zxingLibrary:0.1.2-PRE] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/052d6112bb3c7ab0304361b9b2282bf7/jetified-android-zxingLibrary-0.1.2-PRE/AndroidManifest.xml:14:9-19:63
-89            android:name="com.uuzuche.lib_zxing.activity.CaptureActivity"
-89-->[com.github.leyan95:android-zxingLibrary:0.1.2-PRE] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/052d6112bb3c7ab0304361b9b2282bf7/jetified-android-zxingLibrary-0.1.2-PRE/AndroidManifest.xml:15:13-74
-90            android:configChanges="orientation|keyboardHidden"
-90-->[com.github.leyan95:android-zxingLibrary:0.1.2-PRE] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/052d6112bb3c7ab0304361b9b2282bf7/jetified-android-zxingLibrary-0.1.2-PRE/AndroidManifest.xml:16:13-63
-91            android:screenOrientation="portrait"
-91-->[com.github.leyan95:android-zxingLibrary:0.1.2-PRE] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/052d6112bb3c7ab0304361b9b2282bf7/jetified-android-zxingLibrary-0.1.2-PRE/AndroidManifest.xml:17:13-49
-92            android:theme="@style/Theme.AppCompat.NoActionBar"
-92-->[com.github.leyan95:android-zxingLibrary:0.1.2-PRE] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/052d6112bb3c7ab0304361b9b2282bf7/jetified-android-zxingLibrary-0.1.2-PRE/AndroidManifest.xml:18:13-63
-93            android:windowSoftInputMode="stateAlwaysHidden" />
-93-->[com.github.leyan95:android-zxingLibrary:0.1.2-PRE] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/052d6112bb3c7ab0304361b9b2282bf7/jetified-android-zxingLibrary-0.1.2-PRE/AndroidManifest.xml:19:13-60
-94    </application>
-95
-96</manifest>
+76        <provider
+76-->[:image_picker] /Users/sangsookma/Desktop/project01/oral_fit/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
+77            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+77-->[:image_picker] /Users/sangsookma/Desktop/project01/oral_fit/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-82
+78            android:authorities="codehub.oral_fit.flutter.image_provider"
+78-->[:image_picker] /Users/sangsookma/Desktop/project01/oral_fit/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-74
+79            android:exported="false"
+79-->[:image_picker] /Users/sangsookma/Desktop/project01/oral_fit/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
+80            android:grantUriPermissions="true" >
+80-->[:image_picker] /Users/sangsookma/Desktop/project01/oral_fit/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
+81            <meta-data
+81-->[:image_picker] /Users/sangsookma/Desktop/project01/oral_fit/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:75
+82                android:name="android.support.FILE_PROVIDER_PATHS"
+82-->[:image_picker] /Users/sangsookma/Desktop/project01/oral_fit/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
+83                android:resource="@xml/flutter_image_picker_file_paths" />
+83-->[:image_picker] /Users/sangsookma/Desktop/project01/oral_fit/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-72
+84        </provider>
+85
+86        <uses-library
+86-->[androidx.window:window:1.0.0-beta04] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+87            android:name="androidx.window.extensions"
+87-->[androidx.window:window:1.0.0-beta04] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+88            android:required="false" />
+88-->[androidx.window:window:1.0.0-beta04] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+89        <uses-library
+89-->[androidx.window:window:1.0.0-beta04] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+90            android:name="androidx.window.sidecar"
+90-->[androidx.window:window:1.0.0-beta04] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+91            android:required="false" />
+91-->[androidx.window:window:1.0.0-beta04] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+92
+93        <provider
+93-->[com.squareup.picasso:picasso:2.71828] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/6a6b5c223ccfe6bfe3e15d7b2d7d447e/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+94            android:name="com.squareup.picasso.PicassoProvider"
+94-->[com.squareup.picasso:picasso:2.71828] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/6a6b5c223ccfe6bfe3e15d7b2d7d447e/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+95            android:authorities="codehub.oral_fit.com.squareup.picasso"
+95-->[com.squareup.picasso:picasso:2.71828] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/6a6b5c223ccfe6bfe3e15d7b2d7d447e/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+96            android:exported="false" />
+96-->[com.squareup.picasso:picasso:2.71828] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/6a6b5c223ccfe6bfe3e15d7b2d7d447e/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+97
+98        <activity
+98-->[com.github.leyan95:android-zxingLibrary:0.1.2-PRE] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/052d6112bb3c7ab0304361b9b2282bf7/jetified-android-zxingLibrary-0.1.2-PRE/AndroidManifest.xml:14:9-19:63
+99            android:name="com.uuzuche.lib_zxing.activity.CaptureActivity"
+99-->[com.github.leyan95:android-zxingLibrary:0.1.2-PRE] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/052d6112bb3c7ab0304361b9b2282bf7/jetified-android-zxingLibrary-0.1.2-PRE/AndroidManifest.xml:15:13-74
+100            android:configChanges="orientation|keyboardHidden"
+100-->[com.github.leyan95:android-zxingLibrary:0.1.2-PRE] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/052d6112bb3c7ab0304361b9b2282bf7/jetified-android-zxingLibrary-0.1.2-PRE/AndroidManifest.xml:16:13-63
+101            android:screenOrientation="portrait"
+101-->[com.github.leyan95:android-zxingLibrary:0.1.2-PRE] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/052d6112bb3c7ab0304361b9b2282bf7/jetified-android-zxingLibrary-0.1.2-PRE/AndroidManifest.xml:17:13-49
+102            android:theme="@style/Theme.AppCompat.NoActionBar"
+102-->[com.github.leyan95:android-zxingLibrary:0.1.2-PRE] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/052d6112bb3c7ab0304361b9b2282bf7/jetified-android-zxingLibrary-0.1.2-PRE/AndroidManifest.xml:18:13-63
+103            android:windowSoftInputMode="stateAlwaysHidden" />
+103-->[com.github.leyan95:android-zxingLibrary:0.1.2-PRE] /Users/sangsookma/.gradle/caches/transforms-2/files-2.1/052d6112bb3c7ab0304361b9b2282bf7/jetified-android-zxingLibrary-0.1.2-PRE/AndroidManifest.xml:19:13-60
+104    </application>
+105
+106</manifest>

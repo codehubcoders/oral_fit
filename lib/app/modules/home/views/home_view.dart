@@ -10,6 +10,7 @@ import 'package:oral_fit/app/modules/home/views/select_05.dart';
 import 'package:oral_fit/app/modules/home/views/select_06.dart';
 import 'package:oral_fit/app/modules/home/views/select_07.dart';
 
+import '../../../global_widget/camara.dart';
 import '../../../global_widget/custom_button.dart';
 import '../controllers/home_controller.dart';
 
