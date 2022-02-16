@@ -5,6 +5,7 @@ import 'package:oral_fit/app/core/theme/theme_data.dart';
 import 'package:oral_fit/app/modules/order_list/views/order_detail/order_ditail.dart';
 
 import '../../controllers/order_list_controller.dart';
+import 'madal/addShade_dialog.dart';
 
 class ShadeBox extends GetView {
   const ShadeBox({Key? key}) : super(key: key);
@@ -48,7 +49,9 @@ class ShadeBox extends GetView {
                         ),
                         SizedBox(width: 5),
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            addShadeImg();
+                          },
                           child: smallBox(
                               bgColor: whiteColor,
                               title: '쉐이드 등록하기',

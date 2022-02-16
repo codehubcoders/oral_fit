@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:oral_fit/app/core/theme/theme_data.dart';
+import 'package:image_picker/image_picker.dart';
 
 class HomeStep03Controller extends GetxController {
+  PickedFile? image;
+  Future getImageFromCam() async {
+    var image =
+        await ImagePicker.platform.pickImage(source: ImageSource.gallery);
+    image = image;
+  }
+
   final dropdownValue01 = '쉐이드 종류01'.obs;
   final dropdownList01 = ['쉐이드 종류01', '쉐이드 종류01_01', '쉐이드 종류01_02'].obs;
   void dropdownOn01(String? value) => dropdownValue01.value = value!;

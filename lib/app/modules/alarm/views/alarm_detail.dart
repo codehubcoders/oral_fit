@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../core/theme/theme_data.dart';
+import '../controllers/alarm_controller.dart';
 
 class AlrmDetail extends GetView {
   const AlrmDetail({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final _ = Get.find<AlarmController>();
     return Scaffold(
       bottomSheet: Container(
         color: whiteColor,
@@ -15,7 +17,9 @@ class AlrmDetail extends GetView {
         child: Row(
           children: [
             IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  _.getImageFromCam();
+                },
                 icon: Icon(
                   Icons.attach_file,
                   color: Colors.black.withOpacity(0.54),

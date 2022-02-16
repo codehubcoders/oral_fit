@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import 'package:qrscan/qrscan.dart' as scanner;
 
 class OrderListController extends GetxController {
+  PickedFile? image;
+  Future getImageFromCam() async {
+    var image =
+        await ImagePicker.platform.pickImage(source: ImageSource.gallery);
+    image = image;
+  }
+
   List shadeImgList = [
     'assets/images/shadeimg.png',
     'assets/images/shadeimg.png',

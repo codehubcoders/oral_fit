@@ -1,7 +1,13 @@
 import 'package:get/get.dart';
+import 'package:image_picker/image_picker.dart';
 
 class AlarmController extends GetxController {
-  //TODO: Implement AlarmController
+  PickedFile? image;
+  Future getImageFromCam() async {
+    var image =
+        await ImagePicker.platform.pickImage(source: ImageSource.gallery);
+    image = image;
+  }
 
   final count = 0.obs;
   @override

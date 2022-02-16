@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:oral_fit/app/modules/chat/controllers/chat_controller.dart';
 
 import '../../../core/theme/theme_data.dart';
 
@@ -8,6 +9,7 @@ class ChatDetail extends GetView {
 
   @override
   Widget build(BuildContext context) {
+    final _ = Get.find<ChatController>();
     return Scaffold(
       bottomSheet: Container(
         color: whiteColor,
@@ -15,7 +17,9 @@ class ChatDetail extends GetView {
         child: Row(
           children: [
             IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  _.getImageFromCam();
+                },
                 icon: Icon(
                   Icons.attach_file,
                   color: Colors.black.withOpacity(0.54),

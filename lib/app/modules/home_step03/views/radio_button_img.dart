@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:oral_fit/app/core/theme/theme_data.dart';
-import 'package:oral_fit/app/modules/home_step03/views/addShade_dialog.dart';
+import 'package:oral_fit/app/modules/order_list/views/order_detail/madal/addShade_dialog.dart';
 
 import '../controllers/home_step03_controller.dart';
 
@@ -106,7 +106,7 @@ class RadioButtonScan extends GetView {
                   children: [
                     IconButton(
                         onPressed: () {
-                          addShadeImg();
+                          _.getImageFromCam();
                         },
                         icon: Icon(
                           Icons.attach_file,

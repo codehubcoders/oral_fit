@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:oral_fit/app/core/theme/theme_data.dart';
 
-import '../../../global_widget/custom_button.dart';
+import '../../../../../global_widget/custom_button.dart';
+
+import '../../../controllers/order_list_controller.dart';
 
 void addShadeImg() {
+  final _ = Get.find<OrderListController>();
   Get.defaultDialog(
       radius: 8,
       contentPadding: EdgeInsets.zero,
@@ -26,7 +29,9 @@ void addShadeImg() {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      _.getImageFromCam();
+                    },
                     child: Container(
                       alignment: Alignment.center,
                       width: 50,
