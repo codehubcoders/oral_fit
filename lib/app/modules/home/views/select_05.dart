@@ -61,18 +61,17 @@ class Selecte05 extends GetView {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Obx(() => GestureDetector(
-                  onTap: () {
-                    Future<DateTime?> selectedDate = showDatePicker(
+                  onTap: () async {
+                    DateTime? selectedDate = await showDatePicker(
                         context: context,
                         initialDate: DateTime.now(),
                         firstDate: DateTime.now(),
                         lastDate: DateTime(2100));
-
-                    selectedDate.then((dateTime) {
+                    if (selectedDate != null) {
                       _.selectedDate.value = DateFormat('yyyy/MM/dd')
-                          .format(dateTime as DateTime)
+                          .format(selectedDate)
                           .toString();
-                    });
+                    }
                   },
                   child: Container(
                     padding: EdgeInsets.only(top: 10, bottom: 5, right: 10),
