@@ -6,6 +6,44 @@ import '../../controllers/home_step02_controller.dart';
 
 void selectToothNumber(BuildContext context) {
   final _ = Get.find<HomeStep02Controller>();
+
+  final toothNumberList = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    24,
+    23,
+    22,
+    21,
+    20,
+    19,
+    18,
+    17,
+    32,
+    31,
+    30,
+    29,
+    28,
+    27,
+    26,
+    25,
+  ].obs;
+
+  final toothNumber = 0.obs;
+
   showModalBottomSheet<void>(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
@@ -50,41 +88,44 @@ void selectToothNumber(BuildContext context) {
                         childAspectRatio: 1 / 1.1,
                         physics: NeverScrollableScrollPhysics(),
                         crossAxisCount: 8,
-                        children: List.generate(
-                            toothNumberList.length,
-                            (index) => Column(
-                                  children: [
-                                    Text(
-                                      toothNumberList[index],
-                                      textAlign: TextAlign.center,
-                                    ),
-                                    Obx(() => GestureDetector(
-                                        onTap: () {
-                                          toothNumber.value = index;
-                                        },
-                                        child: toothNumber.value == index
-                                            ? Container(
-                                                width: 30,
-                                                height: 30,
-                                                child: Image.asset(
-                                                  'assets/images/single.png',
-                                                  width: 25,
-                                                ),
-                                              )
-                                            : Container(
-                                                width: 30,
-                                                height: 30,
-                                                decoration: BoxDecoration(
-                                                    border: Border(
-                                                        right: BorderSide(
-                                                            color:
-                                                                greyLiteColorD),
-                                                        bottom: BorderSide(
-                                                            color:
-                                                                greyLiteColorD))),
-                                              ))),
-                                  ],
-                                )),
+                        children:
+                            List.generate(toothNumberList.length, (index) {
+                          return Column(
+                            children: [
+                              Text(
+                                //TODO: change to number
+                                toothNumberList[index].toString(),
+                                textAlign: TextAlign.center,
+                              ),
+                              Obx(() => GestureDetector(
+                                  onTap: () {
+                                    toothNumber.value = index;
+                                  },
+                                  child: index >= toothNumber.value - 1 &&
+                                          index <= toothNumber.value + 1
+                                      ? Container(
+                                          width: 30,
+                                          height: 30,
+                                          child: Image.asset(
+                                            index == toothNumber.value
+                                                ? 'assets/images/toothFill.png'
+                                                : 'assets/images/single.png',
+                                            width: 25,
+                                          ),
+                                        )
+                                      : Container(
+                                          width: 30,
+                                          height: 30,
+                                          decoration: BoxDecoration(
+                                              border: Border(
+                                                  right: BorderSide(
+                                                      color: greyLiteColorD),
+                                                  bottom: BorderSide(
+                                                      color: greyLiteColorD))),
+                                        ))),
+                            ],
+                          );
+                        }),
                       )
                     ]),
               ),
@@ -107,39 +148,3 @@ void selectToothNumber(BuildContext context) {
         );
       });
 }
-
-final toothNumberList = [
-  '1',
-  '2',
-  '3',
-  '4',
-  '5',
-  '6',
-  '7',
-  '8',
-  '9',
-  '10',
-  '11',
-  '12',
-  '13',
-  '14',
-  '15',
-  '16',
-  '24',
-  '23',
-  '22',
-  '21',
-  '20',
-  '19',
-  '18',
-  '17',
-  '32',
-  '31',
-  '30',
-  '29',
-  '28',
-  '27',
-  '26',
-  '25',
-].obs;
-final toothNumber = 0.obs;
