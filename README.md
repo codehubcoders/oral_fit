@@ -5,6 +5,7 @@ Oral Fit Flutter App
 ## Links
 
 - [getx_pattern](https://github.com/kauemurakami/getx_pattern)
+- [GetX Official](https://github.com/jonataslaw/getx/blob/master/README.ko-kr.md)
 
 ## Getting Started
 
