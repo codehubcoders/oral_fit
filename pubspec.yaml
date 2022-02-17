@@ -5,12 +5,15 @@ description: A new Flutter project.
 environment: 
   sdk: '>=2.16.0 <3.0.0'
 
-dependencies: 
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
   cupertino_icons: ^1.0.2
   get: 4.6.1
-  
-  flutter: 
-    sdk: flutter
+
   splash_screen_view: ^3.0.0
   font_awesome_flutter: ^9.2.0
   get_storage: ^2.0.3
@@ -21,10 +24,6 @@ dependencies:
   permission_handler: ^8.3.0
   flutter_switch: ^0.3.2
   image_picker: ^0.8.4+4
-
-  flutter_localizations:
-    sdk: flutter
-
 
 dev_dependencies: 
   flutter_lints: ^1.0.0
@@ -45,5 +44,3 @@ fonts:
           weight: 400
         - asset: assets/fonts/NotoSansKR-Bold.otf
           weight: 700
-
-

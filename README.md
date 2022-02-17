@@ -1,6 +1,10 @@
-# oral_fit
+# oral fit
 
-A new Flutter project.
+Oral Fit Flutter App
+
+## Links
+
+- [getx_pattern](https://github.com/kauemurakami/getx_pattern)
 
 ## Getting Started
 
