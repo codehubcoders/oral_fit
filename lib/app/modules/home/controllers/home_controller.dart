@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:oral_fit/app/modules/home_step02/views/home_step02_view.dart';
 
 class HomeController extends GetxController {
   final selectedIndex01 = 0.obs;
@@ -12,7 +11,7 @@ class HomeController extends GetxController {
   final nameList = ['선택', '기공소1', '기공소2'];
   final selectedName = '선택'.obs;
 
-  final doctorList = ['선택', '담당의사1'];
+  final doctorList = ['선택', '담당의사1', '담당의사2'];
   final selectDoctor = '선택'.obs;
 
   final stepList = ['선택', '담당스텝1', '담당스탭2'];
