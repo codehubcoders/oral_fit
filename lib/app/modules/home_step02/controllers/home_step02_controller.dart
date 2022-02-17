@@ -31,62 +31,40 @@ class HomeStep02Controller extends GetxController {
   final implant03 = 0.obs;
   final crackCrown = 0.obs;
 
-  final dropDownList01 = [
-    '커스텀 어버트먼트',
-    // '커스텀 어버트먼트1',
-    // '커스텀 어버트먼트2'
-  ].obs;
+  final dropDownList01 = ['커스텀 어버트먼트', '커스텀 어버트먼트1', '커스텀 어버트먼트2'].obs;
   final dropDown01 = '커스텀 어버트먼트'.obs;
-  void dropDownOn01(String? value) async => dropDown01.value = value!;
+  void dropDownOn01(String? value) => dropDown01.value = value!;
 
-  final dropDownList02 = [
-    '임플란트 브랜드(시스템)',
-    // '임플란트 브랜드(시스템)1',
-    // '임플란트 브랜드(시스템)2'
-  ].obs;
+  final dropDownList02 =
+      ['임플란트 브랜드(시스템)', '임플란트 브랜드(시스템)1', '임플란트 브랜드(시스템)2'].obs;
   final dropDown02 = '임플란트 브랜드(시스템)'.obs;
-  void dropDownOn02(String? value) async => dropDown02.value = value!;
+  void dropDownOn02(String? value) => dropDown02.value = value!;
 
-  final dropDownList03 = [
-    '직경',
-    // '직경1',
-    // '직경2'
-  ].obs;
+  final dropDownList03 = ['직경', '직경1', '직경2'].obs;
   final dropDown03 = '직경'.obs;
-  void dropDownOn03(String? value) async => dropDown03.value = value!;
+  void dropDownOn03(String? value) => dropDown03.value = value!;
 
-  final dropDownList04 = [
-    '잇몸높이',
-    // '잇몸높이1',
-    // '잇몸높이2'
-  ].obs;
+  final dropDownList04 = ['잇몸높이', '잇몸높이1', '잇몸높이2'].obs;
   final dropDown04 = '잇몸높이'.obs;
-  void dropDownOn04(String? value) async => dropDown04.value = value!;
+  void dropDownOn04(String? value) => dropDown04.value = value!;
 
-  final dropDownList05 = [
-    '임플란트 크라운 유지방법',
-    // '임플란트 크라운 유지방법1',
-    // '임플란트 크라운 유지방법2'
-  ].obs;
+  final dropDownList05 =
+      ['임플란트 크라운 유지방법', '임플란트 크라운 유지방법1', '임플란트 크라운 유지방법2'].obs;
   final dropDown05 = '임플란트 크라운 유지방법'.obs;
-  void dropDownOn05(String? value) async => dropDown05.value = value!;
+  void dropDownOn05(String? value) => dropDown05.value = value!;
 
-  final dropDownList06 = [
-    '임플란트 크라운 타입',
-    // '임플란트 크라운 타입1',
-    // '임플란트 크라운 타입2'
-  ].obs;
+  final dropDownList06 = ['임플란트 크라운 타입', '임플란트 크라운 타입1', '임플란트 크라운 타입2'].obs;
   final dropDown06 = '임플란트 크라운 타입'.obs;
-  void dropDownOn06(String? value) async => dropDown05.value = value!;
+  void dropDownOn06(String? value) => dropDown05.value = value!;
 
   final crackList = [
     'Solid Zirconia Crown',
-    // 'Solid Zirconia Crown1',
-    // 'Solid Zirconia Crown2'
+    'Solid Zirconia Crown1',
+    'Solid Zirconia Crown2'
   ].obs;
 
   final crackdropDown = 'Solid Zirconia Crown'.obs;
-  void crackdropDownOn(String? value) => dropDown01.value = value!;
+  void crackdropDownOn(String? value) => crackdropDown.value = value!;
 
   @override
   void onInit() {

@@ -73,9 +73,25 @@ void implantCrown(BuildContext context) {
                             ),
                             SizedBox(height: 10),
                             ImplantCrownDropDown(
-                              dropdwonList: _.dropDownList01,
-                              dropdwonValue: _.dropDown01.value,
-                              onChanged: _.dropDownOn01,
+                              dropdown: Obx(() => DropdownButtonHideUnderline(
+                                      child: DropdownButton(
+                                    onChanged: _.dropDownOn01,
+                                    value: _.dropDown01.value,
+                                    icon: Icon(
+                                      Icons.keyboard_arrow_down,
+                                      size: 30,
+                                      color: greySubLiteColor9,
+                                    ),
+                                    items: _.dropDownList01.map((String text) {
+                                      return DropdownMenuItem(
+                                        child: Text(
+                                          text,
+                                          style: TextStyle(fontSize: 14),
+                                        ),
+                                        value: text,
+                                      );
+                                    }).toList(),
+                                  ))),
                             ),
                             SizedBox(height: 20),
                             Text(
@@ -95,9 +111,25 @@ void implantCrown(BuildContext context) {
                             ),
                             SizedBox(height: 10),
                             ImplantCrownDropDown(
-                              dropdwonList: _.dropDownList02,
-                              dropdwonValue: _.dropDown02.value,
-                              onChanged: _.dropDownOn02,
+                              dropdown: Obx(() => DropdownButtonHideUnderline(
+                                      child: DropdownButton(
+                                    onChanged: _.dropDownOn02,
+                                    value: _.dropDown02.value,
+                                    icon: Icon(
+                                      Icons.keyboard_arrow_down,
+                                      size: 30,
+                                      color: greySubLiteColor9,
+                                    ),
+                                    items: _.dropDownList02.map((String text) {
+                                      return DropdownMenuItem(
+                                        child: Text(
+                                          text,
+                                          style: TextStyle(fontSize: 14),
+                                        ),
+                                        value: text,
+                                      );
+                                    }).toList(),
+                                  ))),
                             ),
                             SizedBox(height: 20),
                             Text(
@@ -117,15 +149,47 @@ void implantCrown(BuildContext context) {
                             ),
                             SizedBox(height: 10),
                             ImplantCrownDropDown(
-                              dropdwonList: _.dropDownList03,
-                              dropdwonValue: _.dropDown03.value,
-                              onChanged: _.dropDownOn03,
+                              dropdown: Obx(() => DropdownButtonHideUnderline(
+                                      child: DropdownButton(
+                                    onChanged: _.dropDownOn03,
+                                    value: _.dropDown03.value,
+                                    icon: Icon(
+                                      Icons.keyboard_arrow_down,
+                                      size: 30,
+                                      color: greySubLiteColor9,
+                                    ),
+                                    items: _.dropDownList03.map((String text) {
+                                      return DropdownMenuItem(
+                                        child: Text(
+                                          text,
+                                          style: TextStyle(fontSize: 14),
+                                        ),
+                                        value: text,
+                                      );
+                                    }).toList(),
+                                  ))),
                             ),
                             SizedBox(height: 10),
                             ImplantCrownDropDown(
-                              dropdwonList: _.dropDownList04,
-                              dropdwonValue: _.dropDown04.value,
-                              onChanged: _.dropDownOn04,
+                              dropdown: Obx(() => DropdownButtonHideUnderline(
+                                      child: DropdownButton(
+                                    onChanged: _.dropDownOn04,
+                                    value: _.dropDown04.value,
+                                    icon: Icon(
+                                      Icons.keyboard_arrow_down,
+                                      size: 30,
+                                      color: greySubLiteColor9,
+                                    ),
+                                    items: _.dropDownList04.map((String text) {
+                                      return DropdownMenuItem(
+                                        child: Text(
+                                          text,
+                                          style: TextStyle(fontSize: 14),
+                                        ),
+                                        value: text,
+                                      );
+                                    }).toList(),
+                                  ))),
                             ),
                             SizedBox(height: 10),
                             Container(
@@ -146,15 +210,47 @@ void implantCrown(BuildContext context) {
                             ),
                             SizedBox(height: 10),
                             ImplantCrownDropDown(
-                              dropdwonList: _.dropDownList05,
-                              dropdwonValue: _.dropDown05.value,
-                              onChanged: _.dropDownOn05,
+                              dropdown: Obx(() => DropdownButtonHideUnderline(
+                                      child: DropdownButton(
+                                    onChanged: _.dropDownOn05,
+                                    value: _.dropDown05.value,
+                                    icon: Icon(
+                                      Icons.keyboard_arrow_down,
+                                      size: 30,
+                                      color: greySubLiteColor9,
+                                    ),
+                                    items: _.dropDownList05.map((String text) {
+                                      return DropdownMenuItem(
+                                        child: Text(
+                                          text,
+                                          style: TextStyle(fontSize: 14),
+                                        ),
+                                        value: text,
+                                      );
+                                    }).toList(),
+                                  ))),
                             ),
                             SizedBox(height: 10),
                             ImplantCrownDropDown(
-                              dropdwonList: _.dropDownList06,
-                              dropdwonValue: _.dropDown06.value,
-                              onChanged: _.dropDownOn06,
+                              dropdown: Obx(() => DropdownButtonHideUnderline(
+                                      child: DropdownButton(
+                                    onChanged: _.dropDownOn06,
+                                    value: _.dropDown06.value,
+                                    icon: Icon(
+                                      Icons.keyboard_arrow_down,
+                                      size: 30,
+                                      color: greySubLiteColor9,
+                                    ),
+                                    items: _.dropDownList06.map((String text) {
+                                      return DropdownMenuItem(
+                                        child: Text(
+                                          text,
+                                          style: TextStyle(fontSize: 14),
+                                        ),
+                                        value: text,
+                                      );
+                                    }).toList(),
+                                  ))),
                             ),
                             SizedBox(height: 10),
                           ],

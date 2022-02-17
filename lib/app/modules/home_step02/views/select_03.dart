@@ -8,7 +8,7 @@ import '../controllers/home_step02_controller.dart';
 import 'madal/implant_crown.dart';
 import 'madal/prep_crown.dart';
 
-class Step02Selecte03 extends GetView {
+class Step02Select03 extends GetView {
   final _ = Get.find<HomeStep02Controller>();
   @override
   Widget build(BuildContext context) {
