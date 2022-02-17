@@ -64,7 +64,7 @@ class ResultContainer extends GetView<HomeStep02Controller> {
               SizedBox(height: 10),
               Row(
                 children: [
-                  samllboxLine(title: '힐링코핑'),
+                  smallBoxLine(title: '힐링코핑'),
                   Text(
                     '오스템 TS 레귤러 / GTS-SURO4520',
                     style: TextStyle(fontSize: 14),
@@ -187,7 +187,7 @@ resultBox({String? title, String? subtitle, FontWeight? fontWeight}) {
   );
 }
 
-samllboxLine({String? title}) {
+smallBoxLine({String? title}) {
   return Container(
     height: 25,
     decoration: BoxDecoration(
