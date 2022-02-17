@@ -98,7 +98,7 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
                                 fontWeight: FontWeight.w700),
                           ),
                           SizedBox(height: 10),
-                          Step02Selecte01(),
+                          Step02Select01(),
                           SizedBox(height: 20),
                           Text(
                             '임플란트 연결 상태',
@@ -108,7 +108,7 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
                                 fontWeight: FontWeight.w700),
                           ),
                           SizedBox(height: 10),
-                          Step02Selecte02(),
+                          Step02Select02(),
                           SizedBox(height: 20),
                           Text(
                             '크라운의 종류',
@@ -118,7 +118,7 @@ class HomeStep02View extends GetView<HomeStep02Controller> {
                                 fontWeight: FontWeight.w700),
                           ),
                           SizedBox(height: 10),
-                          Step02Selecte03(),
+                          Step02Select03(),
                           SizedBox(height: 20),
                         ])),
                 Container(

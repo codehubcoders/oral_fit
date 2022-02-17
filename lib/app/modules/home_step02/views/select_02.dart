@@ -6,7 +6,7 @@ import 'package:oral_fit/app/modules/home_step02/views/madal/ponticType.dart';
 import '../../../global_widget/sleect_box_step02.dart';
 import '../controllers/home_step02_controller.dart';
 
-class Step02Selecte02 extends GetView {
+class Step02Select02 extends GetView {
   final _ = Get.find<HomeStep02Controller>();
   @override
   Widget build(BuildContext context) {

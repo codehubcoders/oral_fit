@@ -5,7 +5,7 @@ import 'package:oral_fit/app/core/theme/theme_data.dart';
 import '../../../global_widget/selected_box.dart';
 import '../controllers/home_step02_controller.dart';
 
-class Step02Selecte01 extends GetView {
+class Step02Select01 extends GetView {
   final _ = Get.find<HomeStep02Controller>();
   @override
   Widget build(BuildContext context) {

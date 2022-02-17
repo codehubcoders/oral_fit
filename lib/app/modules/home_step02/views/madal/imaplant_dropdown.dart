@@ -4,14 +4,11 @@ import 'package:get/get.dart';
 import '../../../../core/theme/theme_data.dart';
 
 class ImplantCrownDropDown extends GetView {
-  final String dropdwonValue;
-  final List dropdwonList;
-  final Function onChanged;
+  final Widget dropdown;
 
-  ImplantCrownDropDown(
-      {required this.dropdwonValue,
-      required this.dropdwonList,
-      required this.onChanged});
+  ImplantCrownDropDown({
+    required this.dropdown,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -22,24 +19,6 @@ class ImplantCrownDropDown extends GetView {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
             border: Border.all(color: greyLiteColorD)),
-        child: Obx(() => DropdownButtonHideUnderline(
-                child: DropdownButton(
-              onChanged: (value) => onChanged,
-              value: dropdwonValue,
-              icon: Icon(
-                Icons.keyboard_arrow_down,
-                size: 30,
-                color: greySubLiteColor9,
-              ),
-              items: dropdwonList.map((selectedType) {
-                return DropdownMenuItem(
-                  child: Text(
-                    selectedType,
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  value: selectedType,
-                );
-              }).toList(),
-            ))));
+        child: dropdown);
   }
 }
