@@ -20,26 +20,18 @@ import '../modules/order_list/bindings/order_list_binding.dart';
 import '../modules/order_list/views/order_list_view.dart';
 import '../modules/setting/bindings/setting_binding.dart';
 import '../modules/setting/views/setting_view.dart';
-import '../modules/splash-screen/bindings/splash_screen_binding.dart';
-import '../modules/splash-screen/views/splash_screen_view.dart';
-
 part 'app_routes.dart';
 
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.SPLASH_SCREEN;
+  static const INITIAL = Routes.LOGIN;
 
   static final routes = [
     GetPage(
       name: _Paths.HOME,
       page: () => HomeView(),
       binding: HomeBinding(),
-    ),
-    GetPage(
-      name: _Paths.SPLASH_SCREEN,
-      page: () => SplashScreen(),
-      binding: SplashScreenBinding(),
     ),
     GetPage(
       name: _Paths.LOGIN,

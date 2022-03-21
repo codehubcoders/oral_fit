@@ -14,7 +14,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   get: 4.6.1
 
-  splash_screen_view: ^3.0.0
+  flutter_native_splash: ^2.1.1
   font_awesome_flutter: ^9.2.0
   get_storage: ^2.0.3
   flutter_svg: ^1.0.3
@@ -44,3 +44,13 @@ fonts:
           weight: 400
         - asset: assets/fonts/NotoSansKR-Bold.otf
           weight: 700
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/splash_L.png
+  android: true
+  ios: false
+  web: false
+
+  android_12:
+    image: assets/images/splash_L.png
